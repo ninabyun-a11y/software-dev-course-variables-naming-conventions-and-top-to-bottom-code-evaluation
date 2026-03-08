@@ -18,15 +18,26 @@ You will:
   - Enhance the Program: Add at least two additional variables to improve the program’s functionality or clarity.
 
 Things to reflect on:
-  - Why is it important to use meaningful variable names?
+  - Why is it important to use meaningful variable names? 
   - What are the common pitfalls to avoid when naming variables?
   - How do clear variable names benefit team collaboration?
   
 */
-
 let a = "Alice";
 let b = 5;
 let c = 20;
 let d = a + " bought " + b + " items for $" + c + ".";
 
 console.log(d);
+
+a,b,c and d are all unclear and should be given names.  
+
+Refactored and enhanced code:
+
+let firstName = "Alice";
+let quantity = 5; 
+let items = "cakes"
+let itemCost = 20;
+let totalCost= quantity*itemCost;
+let sentence = (firstName + " bought " + quantity + " " + items+ " for $" + itemCost + " each and paid $"  + totalCost + " total.");
+console.log(sentence);
