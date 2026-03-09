@@ -15,7 +15,7 @@ You will:
   - Are unclear or too vague (e.g., a, b, c).
   - Do not follow best practices (e.g., camelCase, descriptive naming).
   - Refactor the Code: Rename the variables and rewrite the program using descriptive names that clearly convey the variable's purpose.
-  - Enhance the Program: Add at least two additional variables to improve the program’s functionality or clarity.
+  - Enhance the Program: Add at least two additional variables to improve the program's functionality or clarity.
 
 Things to reflect on:
   - Why is it important to use meaningful variable names? 
@@ -23,6 +23,8 @@ Things to reflect on:
   - How do clear variable names benefit team collaboration?
   
 */
+
+// ORIGINAL CODE WITH UNCLEAR VARIABLE NAMES:
 let a = "Alice";
 let b = 5;
 let c = 20;
@@ -30,14 +32,16 @@ let d = a + " bought " + b + " items for $" + c + ".";
 
 console.log(d);
 
-a,b,c and d are all unclear and should be given names.  
+// Issue: a, b, c and d are all unclear and should be given descriptive names.
 
-Refactored and enhanced code:
+// REFACTORED AND ENHANCED CODE:
+// Using descriptive variable names that clearly convey purpose and meaning
 
 let firstName = "Alice";
-let quantity = 5; 
-let items = "cakes"
-let itemCost = 20;
-let totalCost= quantity*itemCost;
-let sentence = (firstName + " bought " + quantity + " " + items+ " for $" + itemCost + " each and paid $"  + totalCost + " total.");
-console.log(sentence);
+let quantity = 5;
+let itemType = "cakes";
+let pricePerItem = 20;
+let totalCost = quantity * pricePerItem;
+let purchaseSummary = `${firstName} bought ${quantity} ${itemType} for $${pricePerItem} each and paid $${totalCost} total.`;
+
+console.log(purchaseSummary);
