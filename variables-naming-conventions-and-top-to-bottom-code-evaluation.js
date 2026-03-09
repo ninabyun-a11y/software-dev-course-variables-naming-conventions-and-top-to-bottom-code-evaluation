@@ -39,9 +39,9 @@ console.log(d);
 
 let firstName = "Alice";
 let quantity = 5;
-let itemType = "cakes";
-let pricePerItem = 20;
-let totalCost = quantity * pricePerItem;
-let purchaseSummary = `${firstName} bought ${quantity} ${itemType} for $${pricePerItem} each and paid $${totalCost} total.`;
+let itemType = "shirts";
+let totalCost = 20;
+let pricePerItem = totalCost/quantity;
+let purchaseSummary = `${firstName} bought ${quantity} ${itemType} for $${totalCost} which means each one cost $${pricePerItem} individually.`;
 
 console.log(purchaseSummary);
